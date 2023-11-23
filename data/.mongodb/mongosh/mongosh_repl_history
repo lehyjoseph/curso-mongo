@@ -1,0 +1,7 @@
+exit
+db.products.find()
+use("platzi_store")
+db.products.find()
+use("platzi_store")
+show dbs
+show dns
