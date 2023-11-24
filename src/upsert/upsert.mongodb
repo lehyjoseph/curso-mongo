@@ -1,0 +1,17 @@
+use("platzi_store")
+
+// Upsert inserta o actualiza dependiendo de que exista el documento
+db.iot.updateOne(
+  {
+    sensor: "A001",
+    date: "2022-01-04",
+  },
+  {
+    $push: {
+      readings: 232311,
+    },
+  },{
+    upsert: true
+  }
+);
+
